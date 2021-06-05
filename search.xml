@@ -33,6 +33,25 @@
     
     
     <entry>
+      <title>各种BUG</title>
+      <link href="2021/06/05/%E5%90%84%E7%A7%8DBUG/"/>
+      <url>2021/06/05/%E5%90%84%E7%A7%8DBUG/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443"><a href="#1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443" class="headerlink" title="1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443"></a>1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443</h2><p>解决：</p><p><img src="https://z3.ax1x.com/2021/06/05/2tT5B6.jpg"></p><p><em><strong>重点方法二！！！！</strong></em></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> BUG </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SVM+HOG实现行人检测</title>
       <link href="2021/06/01/SVM%20HOG%E8%A1%8C%E4%BA%BA%E6%A3%80%E6%B5%8B/"/>
       <url>2021/06/01/SVM%20HOG%E8%A1%8C%E4%BA%BA%E6%A3%80%E6%B5%8B/</url>
