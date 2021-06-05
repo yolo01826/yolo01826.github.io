@@ -33,11 +33,40 @@
     
     
     <entry>
+      <title>面向装配作业的双臂机器人协作运动规划与控制研究</title>
+      <link href="2021/06/05/%E9%9D%A2%E5%90%91%E8%A3%85%E9%85%8D%E4%BD%9C%E4%B8%9A%E7%9A%84%E5%8F%8C%E8%87%82%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%8F%E4%BD%9C%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92%E4%B8%8E%E6%8E%A7%E5%88%B6%E7%A0%94%E7%A9%B6/"/>
+      <url>2021/06/05/%E9%9D%A2%E5%90%91%E8%A3%85%E9%85%8D%E4%BD%9C%E4%B8%9A%E7%9A%84%E5%8F%8C%E8%87%82%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%8F%E4%BD%9C%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92%E4%B8%8E%E6%8E%A7%E5%88%B6%E7%A0%94%E7%A9%B6/</url>
+      
+        <content type="html"><![CDATA[<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><p><strong>本项目主要研究基于双臂机器人的物体插孔装配操作，这个问题是双臂机器人协作规划与双臂协调运动控制的关键问题。研究基于项目现有的物理仿真环境，在双臂机器人抓取到物体之后，规划双臂的运动轨迹，实现两个可相互装配物体的插孔操作。</strong></p><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>ubuntu 16.04+Ros Kinetic+Gazebo7+Riviz+MoveitSetupAssistants</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 机械臂 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ROS </tag>
+            
+            <tag> Gazebo </tag>
+            
+            <tag> Moveit </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>各种BUG</title>
       <link href="2021/06/05/%E5%90%84%E7%A7%8DBUG/"/>
       <url>2021/06/05/%E5%90%84%E7%A7%8DBUG/</url>
       
-        <content type="html"><![CDATA[<h2 id="1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443"><a href="#1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443" class="headerlink" title="1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443"></a>1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443</h2><p>解决：</p><p><img src="https://z3.ax1x.com/2021/06/05/2tT5B6.jpg"></p><p><em><strong>重点方法二！！！！</strong></em></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443"><a href="#1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443" class="headerlink" title="1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443"></a>1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443</h2><p>解决：</p><p><img src="https://z3.ax1x.com/2021/06/05/2tT5B6.jpg"></p><p><em><strong>重点方法二！！！！</strong></em></p><h2 id="ubuntu16-04已经连接wifi仍无法上网"><a href="#ubuntu16-04已经连接wifi仍无法上网" class="headerlink" title="ubuntu16.04已经连接wifi仍无法上网"></a>ubuntu16.04已经连接wifi仍无法上网</h2><p><strong>问题：</strong></p><p><img src="https://z3.ax1x.com/2021/06/05/2NQxsg.png"></p><p><strong>解决</strong>：</p><p><img src="https://z3.ax1x.com/2021/06/05/2NQvQS.png"></p><p><strong>修改网络代理为自动即可</strong></p>]]></content>
       
       
       <categories>
