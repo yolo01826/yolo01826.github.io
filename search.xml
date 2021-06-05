@@ -20,11 +20,11 @@
       
         <tags>
             
-            <tag> 目标检测 </tag>
-            
             <tag> YOLOv5 </tag>
             
             <tag> pytorch </tag>
+            
+            <tag> 目标检测 </tag>
             
         </tags>
       
@@ -49,13 +49,13 @@
       
         <tags>
             
+            <tag> 目标检测 </tag>
+            
             <tag> SVM </tag>
             
             <tag> HOG </tag>
             
             <tag> 特征提取 </tag>
-            
-            <tag> 目标检测 </tag>
             
         </tags>
       
