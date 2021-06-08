@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>ROS Kinetic &amp; Gazebo7下的ABB-Yumi双臂协作机器人的食品分类抓取仿真</title>
+      <link href="2021/06/05/ROS%20Kinetic%20&amp;%20Gazebo7%E4%B8%8B%E7%9A%84ABB-Yumi%E5%8F%8C%E8%87%82%E5%8D%8F%E4%BD%9C%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E9%A3%9F%E5%93%81%E5%88%86%E7%B1%BB%E6%8A%93%E5%8F%96%E4%BB%BF%E7%9C%9F/"/>
+      <url>2021/06/05/ROS%20Kinetic%20&amp;%20Gazebo7%E4%B8%8B%E7%9A%84ABB-Yumi%E5%8F%8C%E8%87%82%E5%8D%8F%E4%BD%9C%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E9%A3%9F%E5%93%81%E5%88%86%E7%B1%BB%E6%8A%93%E5%8F%96%E4%BB%BF%E7%9C%9F/</url>
+      
+        <content type="html"><![CDATA[<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><p>   <strong>本项目原计划研究基于双臂机器人的物体插孔装配操作，这个问题是双臂机器人协作规划与双臂协调运动控制的关键问题。研究基于项目现有的物理仿真环境，在双臂机器人抓取到物体之后，规划双臂的运动轨迹，实现两个可相互装配物体的插孔操作。</strong></p><p>  <strong>但是经过仿真测试发现Gazebo对物理效果的仿真有缺陷，两个工件是否能成功装配很大程度上收工件尺寸，质量，惯量，材质，碰撞等参数以及逆运动学求解精度的影响，因此任务调整为结合Yolov3目标检测算法完成双臂的协作控制以及水果以及各种饮料的分类抓取</strong></p><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>Linux: ubuntu 16.04+Ros Kinetic+Gazebo7+Rviz+MoveitSetupAssistants+Blender2.9.3+Yolov3</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工业机器人 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ROS </tag>
+            
+            <tag> Gazebo </tag>
+            
+            <tag> Moveit </tag>
+            
+            <tag> Yolo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>YOLOv5实现中医药软包装检测</title>
       <link href="2021/06/05/YOLOv5%E5%AE%9E%E7%8E%B0%E4%B8%AD%E5%8C%BB%E8%8D%AF%E8%BD%AF%E5%8C%85%E8%A3%85%E6%A3%80%E6%B5%8B/"/>
       <url>2021/06/05/YOLOv5%E5%AE%9E%E7%8E%B0%E4%B8%AD%E5%8C%BB%E8%8D%AF%E8%BD%AF%E5%8C%85%E8%A3%85%E6%A3%80%E6%B5%8B/</url>
@@ -25,35 +56,6 @@
             <tag> YOLOv5 </tag>
             
             <tag> pytorch </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>面向装配作业的双臂机器人协作运动规划与控制研究</title>
-      <link href="2021/06/05/%E9%9D%A2%E5%90%91%E8%A3%85%E9%85%8D%E4%BD%9C%E4%B8%9A%E7%9A%84%E5%8F%8C%E8%87%82%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%8F%E4%BD%9C%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92%E4%B8%8E%E6%8E%A7%E5%88%B6%E7%A0%94%E7%A9%B6/"/>
-      <url>2021/06/05/%E9%9D%A2%E5%90%91%E8%A3%85%E9%85%8D%E4%BD%9C%E4%B8%9A%E7%9A%84%E5%8F%8C%E8%87%82%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%8D%8F%E4%BD%9C%E8%BF%90%E5%8A%A8%E8%A7%84%E5%88%92%E4%B8%8E%E6%8E%A7%E5%88%B6%E7%A0%94%E7%A9%B6/</url>
-      
-        <content type="html"><![CDATA[<h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><p><strong>本项目主要研究基于双臂机器人的物体插孔装配操作，这个问题是双臂机器人协作规划与双臂协调运动控制的关键问题。研究基于项目现有的物理仿真环境，在双臂机器人抓取到物体之后，规划双臂的运动轨迹，实现两个可相互装配物体的插孔操作。</strong></p><h2 id="环境"><a href="#环境" class="headerlink" title="环境"></a>环境</h2><p>ubuntu 16.04+Ros Kinetic+Gazebo7+Riviz+MoveitSetupAssistants</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 机械臂 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ROS </tag>
-            
-            <tag> Gazebo </tag>
-            
-            <tag> Moveit </tag>
             
         </tags>
       
