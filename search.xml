@@ -54,6 +54,31 @@
     
     
     <entry>
+      <title>各种工具的快捷键（持续更新）</title>
+      <link href="2021/06/11/%E5%90%84%E7%A7%8D%E5%B7%A5%E5%85%B7%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/"/>
+      <url>2021/06/11/%E5%90%84%E7%A7%8D%E5%B7%A5%E5%85%B7%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%EF%BC%89/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Pycharm"><a href="#Pycharm" class="headerlink" title="Pycharm"></a>Pycharm</h2><p>打开工程后Add Configuuration为灰色，Ctrl+Shift+F10</p><p>自动调整格式：Ctrl+Alt+L</p><h2 id="labelImage"><a href="#labelImage" class="headerlink" title="labelImage"></a>labelImage</h2><p>Ctrl + s   保存<br>Ctrl + d   Copy the current label and rect box<br>Space      标记当前图片已标记        |<br>w          创建一个矩形<br>d          下一张图片<br>a          上一张图片                             </p><h2 id="SublimeText3"><a href="#SublimeText3" class="headerlink" title="SublimeText3"></a>SublimeText3</h2><p>注释：Ctrl+/</p><p>取消注释： Ctrl+Shift+L</p><p>缩进：Ctrl+]</p><p>前进：Ctrl+[</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 环境 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Pycharm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ROS Kinetic &amp; Gazebo7下的ABB-Yumi双臂协作机器人的食品分类抓取仿真（二）</title>
       <link href="2021/06/11/ROS-Kinetic&amp;%20Gazebo7%E4%B8%8B%E7%9A%84ABB-Yumi%E5%8F%8C%E8%87%82%E5%8D%8F%E4%BD%9C%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E9%A3%9F%E5%93%81%E5%88%86%E7%B1%BB%E6%8A%93%E5%8F%96%E4%BB%BF%E7%9C%9F%EF%BC%88%E4%BA%8C%EF%BC%89/"/>
       <url>2021/06/11/ROS-Kinetic&amp;%20Gazebo7%E4%B8%8B%E7%9A%84ABB-Yumi%E5%8F%8C%E8%87%82%E5%8D%8F%E4%BD%9C%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E9%A3%9F%E5%93%81%E5%88%86%E7%B1%BB%E6%8A%93%E5%8F%96%E4%BB%BF%E7%9C%9F%EF%BC%88%E4%BA%8C%EF%BC%89/</url>
