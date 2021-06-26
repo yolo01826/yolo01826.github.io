@@ -70,31 +70,6 @@
     
     
     <entry>
-      <title>Ubuntu 16.04安装ROS Kinetic</title>
-      <link href="2021/06/11/Ubuntu-16.04%E5%AE%89%E8%A3%85ROS-Kinetic/"/>
-      <url>2021/06/11/Ubuntu-16.04%E5%AE%89%E8%A3%85ROS-Kinetic/</url>
-      
-        <content type="html"><![CDATA[<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p> remove qt5时误删ROS，心态很崩，忍痛卸载重装ROS</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get purge ros-*</span><br><span class="line">sudo rm -rf /etc/ros</span><br></pre></td></tr></table></figure><p>这时已成功卸载ROS</p><h2 id="安装ROS-Kinetic"><a href="#安装ROS-Kinetic" class="headerlink" title="安装ROS Kinetic"></a>安装ROS Kinetic</h2><p>1.设置sources.list</p><p><code>sudo sh -c &#39;echo &quot;deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&#39;</code></p><p>2.设置key（公钥已更新）</p><p><code>sudo apt-key adv --keyserver &#39;hkp://keyserver.ubuntu.com:80&#39; --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</code></p><p>3.更新package</p><p><code>sudo apt-get update</code></p><p>4.安装ROS kinetic完整版</p><p><code>sudo apt-get install ros-kinetic-desktop-full</code></p><p>5.初始化rosdep</p><p><code>sudo rosdep init</code></p><p><code>rosdep update</code></p><p>6.配置ROS环境</p><p><code>echo &quot;source /opt/ros/kinetic/setup.bash&quot; &gt;&gt; ~/.bashrc</code></p><p><code>source ~/.bashrc</code></p><p>7.安装依赖项</p><p><code>sudo apt-get install python-rosinstall</code></p><p><code>python-rosinstall-generator python-wstool build-essential</code></p><p>8.测试ROS是否安装成功</p><p><code>roscore</code></p><h2 id="关于rosdep-update超时"><a href="#关于rosdep-update超时" class="headerlink" title="关于rosdep update超时"></a>关于rosdep update超时</h2><p>​       由于近期国内Github Raw的可用IP越来越少，通过修改hosts文件解决rosdep update超时问题的方法已经不太好用，本文通过修改rosdep源码中下载资源的函数来解决这一问题。<br>网站<a href="https://ghproxy.com/%E6%94%AF%E6%8C%81github%E7%9A%84%E8%B5%84%E6%BA%90%E4%BB%A3%E7%90%86%EF%BC%8C%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%EF%BC%8C%E6%88%91%E4%BB%AC%E5%B0%86%E7%94%A8%E6%AD%A4%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Frosdep%E5%AF%B9Github">https://ghproxy.com/支持github的资源代理，非常好用，我们将用此代理加速rosdep对Github</a> Raw的访问，进而解决rosdep update超时问题。</p><p>1./usr/lib/python2.7/dist-packages/rosdep2/sources_list.py里面的download_rosdep_data函数第一行添加url=”<a href="https://ghproxy.com/&quot;+url">https://ghproxy.com/&quot;+url</a><br>2./usr/lib/python2.7/dist-packages/rosdistro/<strong>init</strong>.py里面的DEFAULT_INDEX_URL…..用DEFAULT_INDEX_URL = ‘<a href="https://ghproxy.com/https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml&#39;%E4%BB%A3%E6%9B%BF">https://ghproxy.com/https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml&#39;代替</a><br>3.<br>/usr/lib/python2.7/dist-packages/rosdep2/gbpdistro_support.py 36行(这一个有一点小问题，因为里面的URL貌似用\拼接起来了，不太清楚作用，但是影响不大，待验证)<br>/usr/lib/python2.7/dist-packages/rosdep2/sources_list.py 72行<br>/usr/lib/python2.7/dist-packages/rosdep2/rep3.py 39行<br>/usr/lib/python2.7/dist-packages/rosdistro/manifest_provider/github.py 68行 119行<br>这些都可以通过在地址前添加<a href="https://ghproxy.com/%E5%89%8D%E7%BC%80%E6%9D%A5%E5%BA%94%E7%94%A8%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E3%80%82">https://ghproxy.com/前缀来应用代理服务。</a><br>重新rosdep就好了</p><h2 id="安装Gazebo-ROS-Control-Moveit等组件"><a href="#安装Gazebo-ROS-Control-Moveit等组件" class="headerlink" title="安装Gazebo,ROS Control,Moveit等组件"></a>安装Gazebo,ROS Control,Moveit等组件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ros-kinetic-moveit-full</span><br><span class="line">sudo apt-get install ros-kinetic-control*</span><br><span class="line">sudo apt-get install ros-kinetic-gazebo-ros*</span><br><span class="line">sudo apt-get install ros-kinetic-joint-trajectory*</span><br><span class="line">sudo apt-get install ros-kinetic-gazebo7-ros-pkgs ros-kinetic-gazebo7-ros-control</span><br></pre></td></tr></table></figure><p>完成到这里，Moveit和Gazebo联合仿真所需的依赖基本都满足啦！！！</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 环境 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> ROS Kinetic </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Ubuntu16.04安装cuda9.2,cudnn 7.6.3</title>
       <link href="2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/"/>
       <url>2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/</url>
@@ -112,6 +87,31 @@
         <tags>
             
             <tag> Cuda </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ubuntu 16.04安装ROS Kinetic</title>
+      <link href="2021/06/11/Ubuntu-16.04%E5%AE%89%E8%A3%85ROS-Kinetic/"/>
+      <url>2021/06/11/Ubuntu-16.04%E5%AE%89%E8%A3%85ROS-Kinetic/</url>
+      
+        <content type="html"><![CDATA[<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p> remove qt5时误删ROS，心态很崩，忍痛卸载重装ROS</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get purge ros-*</span><br><span class="line">sudo rm -rf /etc/ros</span><br></pre></td></tr></table></figure><p>这时已成功卸载ROS</p><h2 id="安装ROS-Kinetic"><a href="#安装ROS-Kinetic" class="headerlink" title="安装ROS Kinetic"></a>安装ROS Kinetic</h2><p>1.设置sources.list</p><p><code>sudo sh -c &#39;echo &quot;deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main&quot; &gt; /etc/apt/sources.list.d/ros-latest.list&#39;</code></p><p>2.设置key（公钥已更新）</p><p><code>sudo apt-key adv --keyserver &#39;hkp://keyserver.ubuntu.com:80&#39; --recv-key C1CF6E31E6BADE8868B172B4F42ED6FBAB17C654</code></p><p>3.更新package</p><p><code>sudo apt-get update</code></p><p>4.安装ROS kinetic完整版</p><p><code>sudo apt-get install ros-kinetic-desktop-full</code></p><p>5.初始化rosdep</p><p><code>sudo rosdep init</code></p><p><code>rosdep update</code></p><p>6.配置ROS环境</p><p><code>echo &quot;source /opt/ros/kinetic/setup.bash&quot; &gt;&gt; ~/.bashrc</code></p><p><code>source ~/.bashrc</code></p><p>7.安装依赖项</p><p><code>sudo apt-get install python-rosinstall</code></p><p><code>python-rosinstall-generator python-wstool build-essential</code></p><p>8.测试ROS是否安装成功</p><p><code>roscore</code></p><h2 id="关于rosdep-update超时"><a href="#关于rosdep-update超时" class="headerlink" title="关于rosdep update超时"></a>关于rosdep update超时</h2><p>​       由于近期国内Github Raw的可用IP越来越少，通过修改hosts文件解决rosdep update超时问题的方法已经不太好用，本文通过修改rosdep源码中下载资源的函数来解决这一问题。<br>网站<a href="https://ghproxy.com/%E6%94%AF%E6%8C%81github%E7%9A%84%E8%B5%84%E6%BA%90%E4%BB%A3%E7%90%86%EF%BC%8C%E9%9D%9E%E5%B8%B8%E5%A5%BD%E7%94%A8%EF%BC%8C%E6%88%91%E4%BB%AC%E5%B0%86%E7%94%A8%E6%AD%A4%E4%BB%A3%E7%90%86%E5%8A%A0%E9%80%9Frosdep%E5%AF%B9Github">https://ghproxy.com/支持github的资源代理，非常好用，我们将用此代理加速rosdep对Github</a> Raw的访问，进而解决rosdep update超时问题。</p><p>1./usr/lib/python2.7/dist-packages/rosdep2/sources_list.py里面的download_rosdep_data函数第一行添加url=”<a href="https://ghproxy.com/&quot;+url">https://ghproxy.com/&quot;+url</a><br>2./usr/lib/python2.7/dist-packages/rosdistro/<strong>init</strong>.py里面的DEFAULT_INDEX_URL…..用DEFAULT_INDEX_URL = ‘<a href="https://ghproxy.com/https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml&#39;%E4%BB%A3%E6%9B%BF">https://ghproxy.com/https://raw.githubusercontent.com/ros/rosdistro/master/index-v4.yaml&#39;代替</a><br>3.<br>/usr/lib/python2.7/dist-packages/rosdep2/gbpdistro_support.py 36行(这一个有一点小问题，因为里面的URL貌似用\拼接起来了，不太清楚作用，但是影响不大，待验证)<br>/usr/lib/python2.7/dist-packages/rosdep2/sources_list.py 72行<br>/usr/lib/python2.7/dist-packages/rosdep2/rep3.py 39行<br>/usr/lib/python2.7/dist-packages/rosdistro/manifest_provider/github.py 68行 119行<br>这些都可以通过在地址前添加<a href="https://ghproxy.com/%E5%89%8D%E7%BC%80%E6%9D%A5%E5%BA%94%E7%94%A8%E4%BB%A3%E7%90%86%E6%9C%8D%E5%8A%A1%E3%80%82">https://ghproxy.com/前缀来应用代理服务。</a><br>重新rosdep就好了</p><h2 id="安装Gazebo-ROS-Control-Moveit等组件"><a href="#安装Gazebo-ROS-Control-Moveit等组件" class="headerlink" title="安装Gazebo,ROS Control,Moveit等组件"></a>安装Gazebo,ROS Control,Moveit等组件</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">sudo apt-get install ros-kinetic-moveit-full</span><br><span class="line">sudo apt-get install ros-kinetic-control*</span><br><span class="line">sudo apt-get install ros-kinetic-gazebo-ros*</span><br><span class="line">sudo apt-get install ros-kinetic-joint-trajectory*</span><br><span class="line">sudo apt-get install ros-kinetic-gazebo7-ros-pkgs ros-kinetic-gazebo7-ros-control</span><br></pre></td></tr></table></figure><p>完成到这里，Moveit和Gazebo联合仿真所需的依赖基本都满足啦！！！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 环境 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ROS Kinetic </tag>
             
         </tags>
       
