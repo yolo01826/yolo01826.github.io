@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>电路934疑难点</title>
+      <link href="2021/10/06/2021-10-6-%E7%94%B5%E8%B7%AF934%E7%96%91%E9%9A%BE%E7%82%B9/"/>
+      <url>2021/10/06/2021-10-6-%E7%94%B5%E8%B7%AF934%E7%96%91%E9%9A%BE%E7%82%B9/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 电路 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Gazebo下的双臂协作机器人的工件装配（三）基于点云和yolo</title>
       <link href="2021/06/26/Gazebo%E4%B8%8B%E7%9A%84%E5%8F%8C%E8%87%82%E5%8D%8F%E4%BD%9C%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E5%B7%A5%E4%BB%B6%E8%A3%85%E9%85%8D%EF%BC%88%E5%9B%9B%EF%BC%89%E5%9F%BA%E4%BA%8E%E7%82%B9%E4%BA%91%E5%92%8Cyolo/"/>
       <url>2021/06/26/Gazebo%E4%B8%8B%E7%9A%84%E5%8F%8C%E8%87%82%E5%8D%8F%E4%BD%9C%E6%9C%BA%E5%99%A8%E4%BA%BA%E7%9A%84%E5%B7%A5%E4%BB%B6%E8%A3%85%E9%85%8D%EF%BC%88%E5%9B%9B%EF%BC%89%E5%9F%BA%E4%BA%8E%E7%82%B9%E4%BA%91%E5%92%8Cyolo/</url>
@@ -70,31 +89,6 @@
     
     
     <entry>
-      <title>Ubuntu16.04安装cuda9.2,cudnn 7.6.3</title>
-      <link href="2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/"/>
-      <url>2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/</url>
-      
-        <content type="html"><![CDATA[<h2 id="安装Cuda-9-2"><a href="#安装Cuda-9-2" class="headerlink" title="安装Cuda 9.2"></a>安装Cuda 9.2</h2><p>由于驱动版本430，根据cuda官网要求可知下载9.2比较合适</p><p><a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p><p>下载cuda_9.2.148_396.37_linux.run</p><p>放到Home目录下</p><p><code>sudo bash cuda_9.2.148_396.37_linux.run</code></p><p><img src="https://z3.ax1x.com/2021/06/11/2W9s8s.png"></p><p><code>sudo source ~/.bashrc</code></p><p><strong>添加到环境变量</strong></p><p>export PATH=/usr/local/cuda-9.2/bin/:$PATH;<br>export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64/:$LD_LIBRARY_PATH;</p><p><strong>除了不安装驱动，其它均选择y</strong></p><p>之后通过 <code>nvcc -V</code>查看cuda是否成功安装</p><p><img src="https://z3.ax1x.com/2021/06/11/2W90Ug.png"></p><p><strong>这里cuda 9.2已经成功安装！！！！！！</strong></p><h2 id="安装Cudnn7-6-3"><a href="#安装Cudnn7-6-3" class="headerlink" title="安装Cudnn7.6.3"></a>安装Cudnn7.6.3</h2><p>与Cuda9.2匹配的Cudnn库有7.6.3，所以这里到<a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a></p><p>下载cudnn-9.2-linux-x64-v7.6.3.30.tgz</p><p>在Home目录解压缩之后</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp cuda/include/cudnn.h /usr/<span class="built_in">local</span>/cuda/include/</span><br><span class="line">sudo cp cuda/lib64/libcudnn* /usr/<span class="built_in">local</span>/cuda/lib64/</span><br></pre></td></tr></table></figure><p>检查Cudnn库是否成功安装</p><p><img src="https://z3.ax1x.com/2021/06/11/2W9B5Q.png"></p><p><strong>这里已经成功安装Cudnn7.6.3!!!!!!</strong></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 环境 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Cuda </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Ubuntu 16.04安装ROS Kinetic</title>
       <link href="2021/06/11/Ubuntu-16.04%E5%AE%89%E8%A3%85ROS-Kinetic/"/>
       <url>2021/06/11/Ubuntu-16.04%E5%AE%89%E8%A3%85ROS-Kinetic/</url>
@@ -112,6 +106,31 @@
         <tags>
             
             <tag> ROS Kinetic </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ubuntu16.04安装cuda9.2,cudnn 7.6.3</title>
+      <link href="2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/"/>
+      <url>2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装Cuda-9-2"><a href="#安装Cuda-9-2" class="headerlink" title="安装Cuda 9.2"></a>安装Cuda 9.2</h2><p>由于驱动版本430，根据cuda官网要求可知下载9.2比较合适</p><p><a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p><p>下载cuda_9.2.148_396.37_linux.run</p><p>放到Home目录下</p><p><code>sudo bash cuda_9.2.148_396.37_linux.run</code></p><p><img src="https://z3.ax1x.com/2021/06/11/2W9s8s.png"></p><p><code>sudo source ~/.bashrc</code></p><p><strong>添加到环境变量</strong></p><p>export PATH=/usr/local/cuda-9.2/bin/:$PATH;<br>export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64/:$LD_LIBRARY_PATH;</p><p><strong>除了不安装驱动，其它均选择y</strong></p><p>之后通过 <code>nvcc -V</code>查看cuda是否成功安装</p><p><img src="https://z3.ax1x.com/2021/06/11/2W90Ug.png"></p><p><strong>这里cuda 9.2已经成功安装！！！！！！</strong></p><h2 id="安装Cudnn7-6-3"><a href="#安装Cudnn7-6-3" class="headerlink" title="安装Cudnn7.6.3"></a>安装Cudnn7.6.3</h2><p>与Cuda9.2匹配的Cudnn库有7.6.3，所以这里到<a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a></p><p>下载cudnn-9.2-linux-x64-v7.6.3.30.tgz</p><p>在Home目录解压缩之后</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp cuda/include/cudnn.h /usr/<span class="built_in">local</span>/cuda/include/</span><br><span class="line">sudo cp cuda/lib64/libcudnn* /usr/<span class="built_in">local</span>/cuda/lib64/</span><br></pre></td></tr></table></figure><p>检查Cudnn库是否成功安装</p><p><img src="https://z3.ax1x.com/2021/06/11/2W9B5Q.png"></p><p><strong>这里已经成功安装Cudnn7.6.3!!!!!!</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 环境 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cuda </tag>
             
         </tags>
       
