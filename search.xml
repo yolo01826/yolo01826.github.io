@@ -8,7 +8,7 @@
       <link href="2021/10/06/2021-10-6-%E7%94%B5%E8%B7%AF934%E7%96%91%E9%9A%BE%E7%82%B9/"/>
       <url>2021/10/06/2021-10-6-%E7%94%B5%E8%B7%AF934%E7%96%91%E9%9A%BE%E7%82%B9/</url>
       
-        <content type="html"><![CDATA[<h3 id="1-Y与Δ的相互转换"><a href="#1-Y与Δ的相互转换" class="headerlink" title="1.Y与Δ的相互转换"></a>1.Y与Δ的相互转换</h3><p><img src="https://z3.ax1x.com/2021/10/06/4xOd4U.jpg" alt=""></p><p><img src="https://z3.ax1x.com/2021/10/06/4xO7DI.jpg" alt=""></p><h3 id="2-实际电源两种模型的相互转换"><a href="#2-实际电源两种模型的相互转换" class="headerlink" title="2.实际电源两种模型的相互转换"></a>2.实际电源两种模型的相互转换</h3><p>  等效变换仅保证端子外部电路的电压，电流和功率相同，对内部并无等效可言</p><h3 id="3-KCL和KVL-的独立方程数"><a href="#3-KCL和KVL-的独立方程数" class="headerlink" title="3.KCL和KVL 的独立方程数"></a>3.KCL和KVL 的独立方程数</h3><p>对于具有$b$条支路和$n$个结点的电路，根据KCL可以列出$(n-1)$个独立方程，根据KVL可以列出$(b-n+1)$个独立方程</p><h3 id="4-结点电压法的特殊情况"><a href="#4-结点电压法的特殊情况" class="headerlink" title="4.结点电压法的特殊情况"></a>4.结点电压法的特殊情况</h3><p>1.无伴独立电压源：</p><p>​           以电压源的一端连接点作为参考点，则关于另一端的节点电压已知 </p><p>2.受控电流源：</p><p>​           作用可以看成是独立电流源但是需将控制量用节点电压表示</p><p>3.有伴受控电压源：</p><p>​          直接转换为等效受控电流源</p><p>4.无伴受控电压源：</p><p>​          以电压源的一端连接点作为参考点，则关于另一端的节点电压已知，控制量需用节点电压表示</p><h3 id="5-叠加定理"><a href="#5-叠加定理" class="headerlink" title="5.叠加定理"></a>5.叠加定理</h3><p>独立源置零时受控源仍应保留在各分电路中                                </p><h3 id="6-戴维南定理和诺顿定理的两种使用方法"><a href="#6-戴维南定理和诺顿定理的两种使用方法" class="headerlink" title="6.戴维南定理和诺顿定理的两种使用方法"></a>6.戴维南定理和诺顿定理的两种使用方法</h3><p>使用对象是==<strong>一个含独立电源、线性电阻和受控源的一端口</strong>==</p><p>1.根据开路电压$u_{oc}$、短路电流的$i_{sc}$以及等效电阻$R_{eq}$中的任意两个求剩余的参数</p><p>2.在端口外施加电压源${u}$,流过电压源的电流为${i}$，根据$u=u_{oc}-R_{eq}i$直接求得${u_{oc}}$或${R_{eq}}$或根据</p><p>$i=i_{sc}-u/R_{eq}$来直接求得$i_{sc}$ 和 $R_{eq}$</p><h3 id="7-特勒根定理"><a href="#7-特勒根定理" class="headerlink" title="7.特勒根定理"></a>7.特勒根定理</h3><p>使用对象是一个具有n个结点和b条支路的电路，对支路内容无详细要求</p><p>==<strong>电压电流必须取参考方向，即电压与电流乘积的正负只取决于两者方向是否一致！！！</strong>==</p><p>定理1：</p><script type="math/tex; mode=display">\prod\limits_{k=1}^{b}{u_k}{i_k}=0</script><p>定理2：</p><p>对于两个图相同但是支路内容不同的电路</p><script type="math/tex; mode=display">\prod\limits_{k=1}^{b}{u_k}{\hat{i_k}}=0</script><script type="math/tex; mode=display">\prod\limits_{k=1}^{b}{\hat{u_k}}{i_k}=0</script><h3 id="8-等电位法"><a href="#8-等电位法" class="headerlink" title="8.等电位法"></a>8.等电位法</h3><p>确定等电位点间==<strong>无电流通过</strong>==，认为它们间可以直接用导线相连（或断开），==<strong>可能存在等电位但是有电流的情况</strong>==</p><h3 id="9-互易定理"><a href="#9-互易定理" class="headerlink" title="9.互易定理"></a>9.互易定理</h3><p>推导自特勒根定理2</p><p>基本公式：${u_1}{\hat{i_1}}+{u_2}{\hat{i_2}}={\hat{u_1}}{i_1}+{\hat{u_2}}{i_2}$</p><p>推导过程：$\prod\limits_{k=1}^{b}{u_k}{\hat{i_k}}={u_1}{\hat{i_1}}+{u_2}{\hat{i_2}}+\prod\limits_{k=3}^{b}{u_k}{\hat{i_k}}={u_1}{\hat{i_1}}+{u_2}{\hat{i_2}}+\prod\limits_{k=3}^{b}{R_k}{i_k}{\hat{i_k}}=0$</p><p>​                   $\prod\limits_{k=1}^{b}{\hat{u_k}}{i_k}={\hat{u_1}}{i_1}+{\hat{u_2}}{i_2}+\prod\limits_{k=3}^{b}{\hat{u_k}}{i_k}={\hat{u_1}}{i_1}+{\hat{u_2}}{i_2}+\prod\limits_{k=3}^{b}{R_k}{i_k}{\hat{i_k}}=0$</p><p>​                  $\therefore{u_1}{\hat{i_1}}+{u_2}{\hat{i_2}}={\hat{u_1}}{i_1}+{\hat{u_2}}{i_2}$</p><p><strong>==使用条件：==</strong></p><p>1.该电路是纯电阻构成的网络</p><p>2.网络外部只有一个独立源</p><p>3.独立源置零后电路的拓扑结构不变</p><p>形式1（只有电压源）：</p><p><img src="https://z3.ax1x.com/2021/10/06/4zRFF1.jpg" alt=""></p><p>​                                  <img src="https://z3.ax1x.com/2021/10/06/4zWLvT.jpg" alt=""></p><p>形式2（只有电流源）：</p><p><img src="https://z3.ax1x.com/2021/10/06/4zRPoR.jpg" alt=""></p><p><img src="https://z3.ax1x.com/2021/10/06/4zWq2V.jpg" alt=""></p><p>形式3（两者都有）：</p><p><img src="https://z3.ax1x.com/2021/10/06/4zRCw9.jpg" alt=""></p><p><img src="https://z3.ax1x.com/2021/10/06/4zWLvT.jpg" alt=""></p><h3 id="10-运算放大器的两种处理"><a href="#10-运算放大器的两种处理" class="headerlink" title="10.运算放大器的两种处理"></a>10.运算放大器的两种处理</h3><p>1.节点电压法，一般情况正反相输入端选一个，地线选一个，输出端不选，其他点视具体电路而定</p><p>2.利用虚短虚断的关系</p><h3 id="11-动态电路中储能元件电压电流的关系"><a href="#11-动态电路中储能元件电压电流的关系" class="headerlink" title="11.动态电路中储能元件电压电流的关系"></a>11.动态电路中储能元件电压电流的关系</h3><p>1.电感放电，相当于电源，电压与电流取非关联参考方向，$u_L=-L\frac{di_l}{dt}$</p><p>2.电感充电，相当于用电器，电压与电流取关联参考方向，$u_L=L\frac{di_l}{dt}$</p><p>3.电容放电，相当于电源，电压与电流取非关联参考方向，$i_c=-C\frac{du_c}{dt}$。</p><p>4.电容充电，相当于用电器，电压与电流取关联参考方向，$i_c=C\frac{du_c}{dt}$</p><p>==<strong>所以在都取关联方向的情况下，$u_L=L\frac{di_l}{dt}$，$i_c=C\frac{du_c}{dt}$</strong>==</p><p><img src="https://z3.ax1x.com/2021/10/07/5pwnXR.jpg" style="zoom:15%;" /></p><p>（a）$u=\frac{1}{C}\int_{-\infty}^{t}id\xi=u(0)+\frac{1}{C}\int_{0}^{t}id\xi$</p><p>  (b)   $i=-\frac{1}{L}\int_{-\infty}^{t}ud\xi=i(0)-\frac{1}{L}\int_{0}^{t}ud\xi$</p><h3 id="12-二阶动态电路R、L，C对放电情况的影响"><a href="#12-二阶动态电路R、L，C对放电情况的影响" class="headerlink" title="12.二阶动态电路R、L，C对放电情况的影响"></a>12.二阶动态电路R、L，C对放电情况的影响</h3><p>1.RLC串联电路</p><p><img src="https://z3.ax1x.com/2021/10/07/5pNdFe.jpg" style="zoom:20%;" /></p><p>​                                                                $LC\frac{d^2u_c}{dt^2}+RC\frac{du_c}{dt}+u_c=0$</p><p>​                                                                $LCp^2+RCp+1=0$</p><p>​                                                               $p=-\frac{R}{2L}\pm\sqrt{(\frac{R}{2L})^2-\frac{1}{LC}}$</p><p>​                                {1}  $R&gt;2\sqrt{\frac{L}{C}}$    非振荡放电</p><p>​                                {2}  $R=2\sqrt{\frac{L}{C}}$     临界非振荡过程</p><p>​                                {3}  $R&lt;2\sqrt{\frac{L}{C}}$     振荡放电</p><h3 id="13-一二阶电路的冲激响应和阶跃响应"><a href="#13-一二阶电路的冲激响应和阶跃响应" class="headerlink" title="13.一二阶电路的冲激响应和阶跃响应"></a>13.一二阶电路的冲激响应和阶跃响应</h3><p>首选运算法，其次是先列微分方程求出阶跃响应然后直接利用阶跃响应求导得到冲激响应</p><h3 id="14-动态电路中的有效值"><a href="#14-动态电路中的有效值" class="headerlink" title="14.动态电路中的有效值"></a>14.动态电路中的有效值</h3><p>正弦电路中利用相量图求得有效值</p><p><img src="https://z3.ax1x.com/2021/10/07/5ptAHO.jpg" alt="30" style="zoom: 35%;" /></p><p>​                                                   $Us=\sqrt{U_L^2+U_R^2}$               $Us=\sqrt{(U_C-U_L)^2+U_R^2}$  </p><h3 id="15-复阻抗Z-R-jX中R为负值的情况"><a href="#15-复阻抗Z-R-jX中R为负值的情况" class="headerlink" title="15.复阻抗Z=R+jX中R为负值的情况"></a>15.复阻抗Z=R+jX中R为负值的情况</h3><p><img src="https://z3.ax1x.com/2021/10/07/5pBFWF.jpg" style="zoom:15%;" /></p>]]></content>
+        <content type="html"><![CDATA[<h3 id="1-Y与Δ的相互转换"><a href="#1-Y与Δ的相互转换" class="headerlink" title="1.Y与Δ的相互转换"></a>1.Y与Δ的相互转换</h3><p><img src="https://z3.ax1x.com/2021/10/06/4xOd4U.jpg" alt=""></p><p><img src="https://z3.ax1x.com/2021/10/06/4xO7DI.jpg" alt=""></p><h3 id="2-实际电源两种模型的相互转换"><a href="#2-实际电源两种模型的相互转换" class="headerlink" title="2.实际电源两种模型的相互转换"></a>2.实际电源两种模型的相互转换</h3><p>  等效变换仅保证端子外部电路的电压，电流和功率相同，对内部并无等效可言</p><h3 id="3-KCL和KVL-的独立方程数"><a href="#3-KCL和KVL-的独立方程数" class="headerlink" title="3.KCL和KVL 的独立方程数"></a>3.KCL和KVL 的独立方程数</h3><p>对于具有$b$条支路和$n$个结点的电路，根据KCL可以列出$(n-1)$个独立方程，根据KVL可以列出$(b-n+1)$个独立方程</p><h3 id="4-结点电压法的特殊情况"><a href="#4-结点电压法的特殊情况" class="headerlink" title="4.结点电压法的特殊情况"></a>4.结点电压法的特殊情况</h3><p>1.无伴独立电压源：</p><p>​           以电压源的一端连接点作为参考点，则关于另一端的节点电压已知 </p><p>2.受控电流源：</p><p>​           作用可以看成是独立电流源但是需将控制量用节点电压表示</p><p>3.有伴受控电压源：</p><p>​          直接转换为等效受控电流源</p><p>4.无伴受控电压源：</p><p>​          以电压源的一端连接点作为参考点，则关于另一端的节点电压已知，控制量需用节点电压表示</p><h3 id="5-叠加定理"><a href="#5-叠加定理" class="headerlink" title="5.叠加定理"></a>5.叠加定理</h3><p>独立源置零时受控源仍应保留在各分电路中                                </p><h3 id="6-戴维南定理和诺顿定理的两种使用方法"><a href="#6-戴维南定理和诺顿定理的两种使用方法" class="headerlink" title="6.戴维南定理和诺顿定理的两种使用方法"></a>6.戴维南定理和诺顿定理的两种使用方法</h3><p>使用对象是==<strong>一个含独立电源、线性电阻和受控源的一端口</strong>==</p><p>1.根据开路电压$u_{oc}$、短路电流的$i_{sc}$以及等效电阻$R_{eq}$中的任意两个求剩余的参数</p><p>2.在端口外施加电压源${u}$,流过电压源的电流为${i}$，根据$u=u_{oc}-R_{eq}i$直接求得${u_{oc}}$或${R_{eq}}$或根据</p><p>$i=i_{sc}-u/R_{eq}$来直接求得$i_{sc}$ 和 $R_{eq}$</p><h3 id="7-特勒根定理"><a href="#7-特勒根定理" class="headerlink" title="7.特勒根定理"></a>7.特勒根定理</h3><p>使用对象是一个具有n个结点和b条支路的电路，对支路内容无详细要求</p><p>==<strong>电压电流必须取参考方向，即电压与电流乘积的正负只取决于两者方向是否一致！！！</strong>==</p><p>定理1：</p><script type="math/tex; mode=display">\prod\limits_{k=1}^{b}{u_k}{i_k}=0</script><p>定理2：</p><p>对于两个图相同但是支路内容不同的电路</p><script type="math/tex; mode=display">\prod\limits_{k=1}^{b}{u_k}{\hat{i_k}}=0</script><script type="math/tex; mode=display">\prod\limits_{k=1}^{b}{\hat{u_k}}{i_k}=0</script><h3 id="8-等电位法"><a href="#8-等电位法" class="headerlink" title="8.等电位法"></a>8.等电位法</h3><p>确定等电位点间==<strong>无电流通过</strong>==，认为它们间可以直接用导线相连（或断开），==<strong>可能存在等电位但是有电流的情况</strong>==</p><h3 id="9-互易定理"><a href="#9-互易定理" class="headerlink" title="9.互易定理"></a>9.互易定理</h3><p>推导自特勒根定理2</p><p>基本公式：${u_1}{\hat{i_1}}+{u_2}{\hat{i_2}}={\hat{u_1}}{i_1}+{\hat{u_2}}{i_2}$</p><p>推导过程：$\prod\limits_{k=1}^{b}{u_k}{\hat{i_k}}={u_1}{\hat{i_1}}+{u_2}{\hat{i_2}}+\prod\limits_{k=3}^{b}{u_k}{\hat{i_k}}={u_1}{\hat{i_1}}+{u_2}{\hat{i_2}}+\prod\limits_{k=3}^{b}{R_k}{i_k}{\hat{i_k}}=0$</p><p>​                   $\prod\limits_{k=1}^{b}{\hat{u_k}}{i_k}={\hat{u_1}}{i_1}+{\hat{u_2}}{i_2}+\prod\limits_{k=3}^{b}{\hat{u_k}}{i_k}={\hat{u_1}}{i_1}+{\hat{u_2}}{i_2}+\prod\limits_{k=3}^{b}{R_k}{i_k}{\hat{i_k}}=0$</p><p>​                  $\therefore{u_1}{\hat{i_1}}+{u_2}{\hat{i_2}}={\hat{u_1}}{i_1}+{\hat{u_2}}{i_2}$</p><p><strong>==使用条件：==</strong></p><p>1.该电路是纯电阻构成的网络</p><p>2.网络外部只有一个独立源</p><p>3.独立源置零后电路的拓扑结构不变</p><p>形式1（只有电压源）：</p><p><img src="https://z3.ax1x.com/2021/10/06/4zRFF1.jpg" alt=""></p><p>​                                  <img src="https://z3.ax1x.com/2021/10/06/4zWLvT.jpg" alt=""></p><p>形式2（只有电流源）：</p><p><img src="https://z3.ax1x.com/2021/10/06/4zRPoR.jpg" alt=""></p><p><img src="https://z3.ax1x.com/2021/10/06/4zWq2V.jpg" alt=""></p><p>形式3（两者都有）：</p><p><img src="https://z3.ax1x.com/2021/10/06/4zRCw9.jpg" alt=""></p><p><img src="https://z3.ax1x.com/2021/10/06/4zWLvT.jpg" alt=""></p><h3 id="10-运算放大器的两种处理"><a href="#10-运算放大器的两种处理" class="headerlink" title="10.运算放大器的两种处理"></a>10.运算放大器的两种处理</h3><p>$\enclose{circle}{1}$.节点电压法，一般情况正反相输入端选一个，地线选一个，输出端不选，其他点视具体电路而定</p><p>$\enclose{circle}{2}$.利用虚短虚断的关系</p><h3 id="11-动态电路中储能元件电压电流的关系"><a href="#11-动态电路中储能元件电压电流的关系" class="headerlink" title="11.动态电路中储能元件电压电流的关系"></a>11.动态电路中储能元件电压电流的关系</h3><p>1.电感放电，相当于电源，电压与电流取非关联参考方向，$u_L=-L\frac{di_l}{dt}$</p><p>2.电感充电，相当于用电器，电压与电流取关联参考方向，$u_L=L\frac{di_l}{dt}$</p><p>3.电容放电，相当于电源，电压与电流取非关联参考方向，$i_c=-C\frac{du_c}{dt}$。</p><p>4.电容充电，相当于用电器，电压与电流取关联参考方向，$i_c=C\frac{du_c}{dt}$</p><p>==<strong>所以在都取关联方向的情况下，$u_L=L\frac{di_l}{dt}$，$i_c=C\frac{du_c}{dt}$</strong>==</p><p><img src="https://z3.ax1x.com/2021/10/07/5pwnXR.jpg" style="zoom:15%;" /></p><p>（a）$u=\frac{1}{C}\int_{-\infty}^{t}id\xi=u(0)+\frac{1}{C}\int_{0}^{t}id\xi$</p><p>  (b)   $i=-\frac{1}{L}\int_{-\infty}^{t}ud\xi=i(0)-\frac{1}{L}\int_{0}^{t}ud\xi$</p><h3 id="12-二阶动态电路R、L，C对放电情况的影响"><a href="#12-二阶动态电路R、L，C对放电情况的影响" class="headerlink" title="12.二阶动态电路R、L，C对放电情况的影响"></a>12.二阶动态电路R、L，C对放电情况的影响</h3><p>1.RLC串联电路</p><p><img src="https://z3.ax1x.com/2021/10/07/5pNdFe.jpg" style="zoom:20%;" /></p><p>​                                                                $LC\frac{d^2u_c}{dt^2}+RC\frac{du_c}{dt}+u_c=0$</p><p>​                                                                $LCp^2+RCp+1=0$</p><p>​                                                               $p=-\frac{R}{2L}\pm\sqrt{(\frac{R}{2L})^2-\frac{1}{LC}}$</p><p>​                                {1}  $R&gt;2\sqrt{\frac{L}{C}}$    非振荡放电</p><p>​                                {2}  $R=2\sqrt{\frac{L}{C}}$     临界非振荡过程</p><p>​                                {3}  $R&lt;2\sqrt{\frac{L}{C}}$     振荡放电</p><h3 id="13-一二阶电路的冲激响应和阶跃响应"><a href="#13-一二阶电路的冲激响应和阶跃响应" class="headerlink" title="13.一二阶电路的冲激响应和阶跃响应"></a>13.一二阶电路的冲激响应和阶跃响应</h3><p>首选运算法，其次是先列微分方程求出阶跃响应然后直接利用阶跃响应求导得到冲激响应</p><h3 id="14-动态电路中的有效值"><a href="#14-动态电路中的有效值" class="headerlink" title="14.动态电路中的有效值"></a>14.动态电路中的有效值</h3><p>正弦电路中利用相量图求得有效值</p><p><img src="https://z3.ax1x.com/2021/10/07/5ptAHO.jpg" alt="30" style="zoom: 35%;" /></p><p>​                                                   $Us=\sqrt{U_L^2+U_R^2}$               $Us=\sqrt{(U_C-U_L)^2+U_R^2}$  </p><h3 id="15-复阻抗Z-R-jX中R为负值的情况"><a href="#15-复阻抗Z-R-jX中R为负值的情况" class="headerlink" title="15.复阻抗Z=R+jX中R为负值的情况"></a>15.复阻抗Z=R+jX中R为负值的情况</h3><p><img src="https://z3.ax1x.com/2021/10/07/5pBFWF.jpg" style="zoom:15%;" /></p><h3 id="16-结点电压两结点间只有导线"><a href="#16-结点电压两结点间只有导线" class="headerlink" title="16.结点电压两结点间只有导线"></a>16.结点电压两结点间只有导线</h3><p><img src="https://z3.ax1x.com/2021/10/08/5CgrCR.jpg" style="zoom: 20%;" /></p><p>结点$\enclose{circle}{1}$，$\enclose{circle}{3}$直接可视为电流源</p><h3 id="17-去耦等效电路"><a href="#17-去耦等效电路" class="headerlink" title="17.去耦等效电路"></a>17.去耦等效电路</h3><h3 id="18-三个电感相耦合"><a href="#18-三个电感相耦合" class="headerlink" title="18.三个电感相耦合"></a>18.三个电感相耦合</h3><p><img src="https://z3.ax1x.com/2021/10/08/5Pngl8.jpg" style="zoom:15%;" /></p><p><img src="https://z3.ax1x.com/2021/10/08/5PnROg.jpg" style="zoom:15%;" /></p><h3 id="19-电路相量图示范"><a href="#19-电路相量图示范" class="headerlink" title="19.电路相量图示范"></a>19.电路相量图示范</h3><p>$R_1=R_2=100\Omega$ ,  $L_1=3H$, $L_2=10H$ ,$M=5H$ ,$U=220V$, $w=100rad/s$</p><p><img src="https://z3.ax1x.com/2021/10/08/5PVlCT.jpg" style="zoom:15%;" /></p><p><img src="https://z3.ax1x.com/2021/10/08/5PefgS.jpg" style="zoom:15%;" /></p><p>​                                                   <img src="https://z3.ax1x.com/2021/10/08/5PeW38.jpg" style="zoom:10%;" /></p><p><img src="https://z3.ax1x.com/2021/10/08/5PV18U.jpg" style="zoom:20%;" /></p><h3 id="20-最大功率"><a href="#20-最大功率" class="headerlink" title="20.最大功率"></a>20.最大功率</h3><h3 id="21-串并联谐振"><a href="#21-串并联谐振" class="headerlink" title="21.串并联谐振"></a>21.串并联谐振</h3><p>1.RLC串联电路</p><p><img src="https://z3.ax1x.com/2021/10/08/5P8CaF.jpg" alt=""></p><p>​                                                                       $w_0=\frac{1}{\sqrt{LC}}$</p><p>​                                                                      $U_L(jw_0)=U_C(jw_0)=QU_s(jw_0)$</p><p>​                                                                       $Q=\frac{w_0L}{R}=\frac{1}{W_0CR}=\frac{1}{R}\sqrt{\frac{L}{C}}$</p><p>​                                                                      $BW=\frac{w_0}{Q}$</p><p>​                                                            </p><p> 2.RLC并联电路</p><p><img src="https://z3.ax1x.com/2021/10/08/5P89VU.jpg" alt=""></p><p>​                                                                          $w_0=\frac{1}{\sqrt{LC}}$</p><p>​                                                                          $Y(jw_0)=G$</p><p>​                                                                           $Q=\frac{I_L(w_0)}{I_s}=\frac{I_C(w_0)}{I_s}=\frac{1}{W_0LG}=\frac{w_0C}{G}=\frac{1}{G}\sqrt{\frac{C}{L}}$</p><p>3.另一种RLC并联电路</p><p><img src="https://z3.ax1x.com/2021/10/08/5PGg1A.jpg" alt=""></p><p>​                                                                           $w_0=\frac{1}{\sqrt{LC}}\sqrt{1-\frac{CR^2}{L}}$</p><p>​                                                                           $Y(jw_0)=\frac{CR}{L}$</p>]]></content>
       
       
       <categories>
@@ -89,31 +89,6 @@
     
     
     <entry>
-      <title>Ubuntu16.04安装cuda9.2,cudnn 7.6.3</title>
-      <link href="2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/"/>
-      <url>2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/</url>
-      
-        <content type="html"><![CDATA[<h2 id="安装Cuda-9-2"><a href="#安装Cuda-9-2" class="headerlink" title="安装Cuda 9.2"></a>安装Cuda 9.2</h2><p>由于驱动版本430，根据cuda官网要求可知下载9.2比较合适</p><p><a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p><p>下载cuda_9.2.148_396.37_linux.run</p><p>放到Home目录下</p><p><code>sudo bash cuda_9.2.148_396.37_linux.run</code></p><p><img src="https://z3.ax1x.com/2021/06/11/2W9s8s.png" alt=""></p><p><code>sudo source ~/.bashrc</code></p><p><strong>添加到环境变量</strong></p><p>export PATH=/usr/local/cuda-9.2/bin/:$PATH;<br>export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64/:$LD_LIBRARY_PATH;</p><p><strong>除了不安装驱动，其它均选择y</strong></p><p>之后通过 <code>nvcc -V</code>查看cuda是否成功安装</p><p><img src="https://z3.ax1x.com/2021/06/11/2W90Ug.png" alt=""></p><p><strong>这里cuda 9.2已经成功安装！！！！！！</strong></p><h2 id="安装Cudnn7-6-3"><a href="#安装Cudnn7-6-3" class="headerlink" title="安装Cudnn7.6.3"></a>安装Cudnn7.6.3</h2><p>与Cuda9.2匹配的Cudnn库有7.6.3，所以这里到<a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a></p><p>下载cudnn-9.2-linux-x64-v7.6.3.30.tgz</p><p>在Home目录解压缩之后</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp cuda/include/cudnn.h /usr/<span class="built_in">local</span>/cuda/include/</span><br><span class="line">sudo cp cuda/lib64/libcudnn* /usr/<span class="built_in">local</span>/cuda/lib64/</span><br></pre></td></tr></table></figure><p>检查Cudnn库是否成功安装</p><p><img src="https://z3.ax1x.com/2021/06/11/2W9B5Q.png" alt=""></p><p><strong>这里已经成功安装Cudnn7.6.3!!!!!!</strong></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 环境 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Cuda </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Ubuntu 16.04安装ROS Kinetic</title>
       <link href="2021/06/11/Ubuntu-16.04%E5%AE%89%E8%A3%85ROS-Kinetic/"/>
       <url>2021/06/11/Ubuntu-16.04%E5%AE%89%E8%A3%85ROS-Kinetic/</url>
@@ -131,6 +106,31 @@
         <tags>
             
             <tag> ROS Kinetic </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Ubuntu16.04安装cuda9.2,cudnn 7.6.3</title>
+      <link href="2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/"/>
+      <url>2021/06/11/Ubuntu16.04%E5%AE%89%E8%A3%85cuda9.2,cudnn-7.6.3/</url>
+      
+        <content type="html"><![CDATA[<h2 id="安装Cuda-9-2"><a href="#安装Cuda-9-2" class="headerlink" title="安装Cuda 9.2"></a>安装Cuda 9.2</h2><p>由于驱动版本430，根据cuda官网要求可知下载9.2比较合适</p><p><a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p><p>下载cuda_9.2.148_396.37_linux.run</p><p>放到Home目录下</p><p><code>sudo bash cuda_9.2.148_396.37_linux.run</code></p><p><img src="https://z3.ax1x.com/2021/06/11/2W9s8s.png" alt=""></p><p><code>sudo source ~/.bashrc</code></p><p><strong>添加到环境变量</strong></p><p>export PATH=/usr/local/cuda-9.2/bin/:$PATH;<br>export LD_LIBRARY_PATH=/usr/local/cuda-9.2/lib64/:$LD_LIBRARY_PATH;</p><p><strong>除了不安装驱动，其它均选择y</strong></p><p>之后通过 <code>nvcc -V</code>查看cuda是否成功安装</p><p><img src="https://z3.ax1x.com/2021/06/11/2W90Ug.png" alt=""></p><p><strong>这里cuda 9.2已经成功安装！！！！！！</strong></p><h2 id="安装Cudnn7-6-3"><a href="#安装Cudnn7-6-3" class="headerlink" title="安装Cudnn7.6.3"></a>安装Cudnn7.6.3</h2><p>与Cuda9.2匹配的Cudnn库有7.6.3，所以这里到<a href="https://developer.nvidia.com/rdp/cudnn-archive">https://developer.nvidia.com/rdp/cudnn-archive</a></p><p>下载cudnn-9.2-linux-x64-v7.6.3.30.tgz</p><p>在Home目录解压缩之后</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo cp cuda/include/cudnn.h /usr/<span class="built_in">local</span>/cuda/include/</span><br><span class="line">sudo cp cuda/lib64/libcudnn* /usr/<span class="built_in">local</span>/cuda/lib64/</span><br></pre></td></tr></table></figure><p>检查Cudnn库是否成功安装</p><p><img src="https://z3.ax1x.com/2021/06/11/2W9B5Q.png" alt=""></p><p><strong>这里已经成功安装Cudnn7.6.3!!!!!!</strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 环境 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Cuda </tag>
             
         </tags>
       
@@ -226,6 +226,25 @@
     
     
     <entry>
+      <title>各种BUG</title>
+      <link href="2021/06/05/%E5%90%84%E7%A7%8DBUG/"/>
+      <url>2021/06/05/%E5%90%84%E7%A7%8DBUG/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443"><a href="#1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443" class="headerlink" title="1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443"></a>1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443</h2><p>解决：</p><p><img src="https://z3.ax1x.com/2021/06/05/2tT5B6.jpg" alt=""></p><p><strong><em>重点方法二！！！！</em></strong></p><h2 id="2-ubuntu16-04已经连接wifi仍无法上网"><a href="#2-ubuntu16-04已经连接wifi仍无法上网" class="headerlink" title="2.ubuntu16.04已经连接wifi仍无法上网"></a>2.ubuntu16.04已经连接wifi仍无法上网</h2><p><strong>问题：</strong></p><p><img src="https://z3.ax1x.com/2021/06/05/2NQxsg.png" alt=""></p><p><strong>解决</strong>：</p><p><img src="https://z3.ax1x.com/2021/06/05/2NQvQS.png" alt=""></p><p><strong>修改网络代理为自动即可</strong></p><h2 id="3-ROS运行python节点报错"><a href="#3-ROS运行python节点报错" class="headerlink" title="3.ROS运行python节点报错"></a>3.ROS运行python节点报错</h2><p><img src="https://z3.ax1x.com/2021/06/14/2TNiIs.png" alt=""></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> BUG </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>YOLOv5实现中医药软包装检测</title>
       <link href="2021/06/05/YOLOv5%E5%AE%9E%E7%8E%B0%E4%B8%AD%E5%8C%BB%E8%8D%AF%E8%BD%AF%E5%8C%85%E8%A3%85%E6%A3%80%E6%B5%8B/"/>
       <url>2021/06/05/YOLOv5%E5%AE%9E%E7%8E%B0%E4%B8%AD%E5%8C%BB%E8%8D%AF%E8%BD%AF%E5%8C%85%E8%A3%85%E6%A3%80%E6%B5%8B/</url>
@@ -249,25 +268,6 @@
             <tag> pytorch </tag>
             
         </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>各种BUG</title>
-      <link href="2021/06/05/%E5%90%84%E7%A7%8DBUG/"/>
-      <url>2021/06/05/%E5%90%84%E7%A7%8DBUG/</url>
-      
-        <content type="html"><![CDATA[<h2 id="1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443"><a href="#1-hexo-d部署出现SSL-connect-SSL-ERROR-SYSCALL-in-connection-to-github-com-443" class="headerlink" title="1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443"></a>1.hexo d部署出现SSL_connect: SSL_ERROR_SYSCALL in connection to github.com:443</h2><p>解决：</p><p><img src="https://z3.ax1x.com/2021/06/05/2tT5B6.jpg" alt=""></p><p><strong><em>重点方法二！！！！</em></strong></p><h2 id="2-ubuntu16-04已经连接wifi仍无法上网"><a href="#2-ubuntu16-04已经连接wifi仍无法上网" class="headerlink" title="2.ubuntu16.04已经连接wifi仍无法上网"></a>2.ubuntu16.04已经连接wifi仍无法上网</h2><p><strong>问题：</strong></p><p><img src="https://z3.ax1x.com/2021/06/05/2NQxsg.png" alt=""></p><p><strong>解决</strong>：</p><p><img src="https://z3.ax1x.com/2021/06/05/2NQvQS.png" alt=""></p><p><strong>修改网络代理为自动即可</strong></p><h2 id="3-ROS运行python节点报错"><a href="#3-ROS运行python节点报错" class="headerlink" title="3.ROS运行python节点报错"></a>3.ROS运行python节点报错</h2><p><img src="https://z3.ax1x.com/2021/06/14/2TNiIs.png" alt=""></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> BUG </category>
-          
-      </categories>
-      
       
     </entry>
     
